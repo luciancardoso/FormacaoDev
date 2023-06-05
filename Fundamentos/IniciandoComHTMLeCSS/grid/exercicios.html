@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: black;
+            color: white;
+            width: 800px;
+        }
+
+        h1 {
+            font-weight: bold;
+            background-color: gray;
+            border-bottom: solid 4px lightskyblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        ul {
+            background-color: white;
+            list-style: none;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        a:hover {
+            background-color: lightblue;
+        }
+
+        .navegacao>ul {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Lista de Exercicios CSS GRID</h1>
+
+    <div class="navegacao">
+        <ul>
+            <li>
+                <a href="./basico_1.html">Span Grid #01</a>
+            </li>
+            <li>
+                <a href="./basico_2.html">Span Grid #02</a>
+            </li>
+            <li>
+                <a href="./basico_3.html">Linhas e colunas</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="./espacos.html">Grid Espaços</a>
+            </li>
+            <li>
+                <a href="./areas.html">Áreas</a>
+            </li>
+            <li>
+                <a href="./areas_responsivas.html">Áreas Responsivas</a>
+            </li>
+        </ul>
+    </div>
+
+    
+</body>
+</html>

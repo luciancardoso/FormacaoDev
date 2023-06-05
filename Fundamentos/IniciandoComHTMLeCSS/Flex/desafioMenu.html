@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Menu</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #bbb;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .cabecalho {
+            background-color: #333;
+            color: white;
+            border-bottom: 3px solid #06caca;
+            height: 80px;
+            padding: 0 10px;
+            font-size: 1.4rem;
+            font-weight: 200;
+
+            display: flex;
+            align-items: center;
+
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .menu {
+            flex-grow: 1;
+        }
+
+        .menu > ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        .menu a:hover {
+            background-color: #05caca;
+        }
+
+        .botao {
+            padding: 5px 30px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+
+        .botao.destaque {
+            background-color: crimson;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#home">
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo da Coder">
+            </a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Cursos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="CadastrosELogin">
+            <a href="#login" class="botao">Login</a>
+            <a href="#cadastro" class="botao destaque">Cadastrar</a>
+        </div>
+    </header>
+
+</body>
+</html>

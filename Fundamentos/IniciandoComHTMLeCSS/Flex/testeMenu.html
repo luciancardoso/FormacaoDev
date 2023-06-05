@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cod3r - Cursos</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #bbb;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .container {
+            background-color: #333;
+            color: white;
+            height: 80px;
+            border-bottom: 5px solid #06CACA;
+            padding: 0 10px;
+            font-size: 1.4rem;
+            font-weight: 200;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .menu {
+            flex-grow: 1;
+        }
+
+        .menu > ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        .menu a:hover {
+            background-color: #05CACA;
+        }
+
+        .botao {
+            padding: 5px 30px;
+            background-color: black;
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+        .botao.destaque {
+            background-color: crimson;
+        }
+
+        .conteudo {
+            text-align: center;
+            width: 100%;
+            height: 72vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .rodape {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            padding: 0 10px;
+        }
+
+        .paragrafo {
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="container">
+        <div class="logo">
+            <a href="#home">
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo Da Coder">
+            </a>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="autenticacao">
+            <a href="#login" class="botao">Login</a>
+            <a href="#cadastro" class="botao destaque">Cadastro</a>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <h1>Curso de JavaScript</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, officiis ut! Itaque soluta neque unde nobis reprehenderit nemo fugiat quae, libero eum! Veritatis dicta dolores delectus rem distinctio incidunt aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique placeat ut omnis ab maxime atque consequatur adipisci eius quo magni nesciunt nihil eveniet aperiam suscipit mollitia, praesentium perspiciatis quidem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit eum beatae mollitia amet, esse cumque magnam pariatur aspernatur vitae consequatur perspiciatis accusamus veritatis quia quae corporis asperiores corrupti sapiente omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quam ea nisi eum vel ullam atque corrupti maxime natus alias culpa repellendus quas commodi placeat, cum esse? Consequatur, quo voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, omnis? Sequi in ad magnam, aliquam, quae quis maiores voluptate libero blanditiis consequatur a vel non numquam repudiandae ipsam, quaerat perferendis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, dolorum nemo ratione est, illum, consectetur totam atque quo cumque saepe quidem numquam. Enim libero distinctio sunt dolores minima? Ratione, asperiores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ab, eos nulla reprehenderit delectus dolor cumque vitae, illum libero inventore numquam aut minus. Distinctio aliquam voluptas dolorum, quos odit obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eveniet quibusdam veritatis repellendus. Deserunt, cumque quas quibusdam tempore dolorem, quis nemo, veritatis sunt repudiandae inventore est dolore iure modi consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui deleniti maiores explicabo esse molestias assumenda ipsam omnis facere repellat quibusdam distinctio nemo, optio magni illo. Facilis ipsa inventore obcaecati. Illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ducimus non reprehenderit cupiditate quo quam vero fugit voluptate ut nemo dolore, culpa iure ipsum quas nobis qui quibusdam adipisci sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non consectetur sint impedit veniam, molestiae quasi quo iusto provident error perspiciatis laborum minus modi, sunt quis suscipit delectus ullam rerum.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, officiis ut! Itaque soluta neque unde nobis reprehenderit nemo fugiat quae, libero eum! Veritatis dicta dolores delectus rem distinctio incidunt aspernatur?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, officiis ut! Itaque soluta neque unde nobis reprehenderit nemo fugiat quae, libero eum! Veritatis dicta dolores delectus rem distinctio incidunt aspernatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut culpa, maxime vitae, modi assumenda praesentium, consequuntur beatae ipsa sequi perspiciatis nisi? Minus tempore iure ducimus perspiciatis! Nesciunt voluptates dicta odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam, quisquam a sapiente ex nam temporibus quasi culpa ipsam dolorum earum soluta nihil aspernatur harum minus illum fugiat nisi omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempora ab incidunt ad necessitatibus deleniti odit labore quisquam. Molestias totam dolorum odit modi dolore minus, omnis facilis atque voluptatibus alias. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis molestias inventore explicabo, exercitationem iure repellendus voluptatibus odio accusantium quam hic eligendi, illo quod sint aspernatur molestiae obcaecati voluptatum quas tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste modi amet est praesentium minima quaerat reiciendis repellat, itaque quae consequuntur expedita eos voluptatem in quia quas ipsa delectus vero ratione.</p>
+
+            <img src="https://th.bing.com/th/id/OIP.tNXjpHRy0KayYG3QZcsPkwHaEK?w=286&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="logo">
+            <a href="#home">
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo da Coder">
+            </a>
+            <p class="paragrafo">&copy; Todos os direitos reservados - 2023</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

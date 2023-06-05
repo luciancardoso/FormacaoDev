@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de Elemento #02</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        /* even = elemento PAR */
+        div:nth-child(even) {
+            background-color: rebeccapurple;
+        }
+
+        /* odd = elemento Ímpar */
+        div:nth-child(odd) {
+            background-color: plum;
+        }
+
+        div:hover {
+            background-color: purple;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid greenyellow;
+            border-radius: 2px;
+        }
+
+        p::first-letter {
+            font-size: 50px;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Seletores de Pseudo-Classes</h2>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <input type="text">
+
+    <h2>Seletores de Pseudo-Elementos</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eligendi dolorem explicabo maxime maiores temporibus, velit saepe. Cumque quos accusantium illo ipsum voluptatibus molestiae, minus temporibus eum dolor libero ratione.
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda quam magnam, consectetur corporis nostrum atque necessitatibus deleniti eaque eum quas dolor facilis reiciendis, quisquam culpa est pariatur laboriosam architecto expedita.
+    </p>
+    
+</body>
+</html>
