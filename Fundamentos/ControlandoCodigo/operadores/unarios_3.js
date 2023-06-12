@@ -1,0 +1,10 @@
+console.log(!!true)
+console.log(!!false)
+console.log(!!0)
+console.log(!!0.0000011)
+
+console.log(!!'Lucian')
+console.log(!!'  ')
+console.log(!!'  Ana  '.trim())
+console.log(!!'    '.trim())
+console.log(!!'')
