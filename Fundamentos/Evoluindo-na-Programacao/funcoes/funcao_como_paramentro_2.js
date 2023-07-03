@@ -16,9 +16,14 @@ function multiplicar(a, b){
     return a * b
 }
 
+function bomDia(){
+    return 'Bom Dia!'
+}
+
 executar(somar, 7, 5)
 executar(subtrair, 8, 33)
 executar(multiplicar, 40, 20)
 executar(multiplicar)
 executar(somar)
 executar(subtrair)
+executar(bomDia)
