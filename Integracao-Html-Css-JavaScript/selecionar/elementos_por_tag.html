@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integração HTML, CSS e JS</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body id="exercicio">
+    <div id="primeiro">#primeiro</div>
+    <div id="segundo">#segundo</div>
+    <div id="terceiro">#terceiro</div>
+    <div id="quarto">#quarto</div>
+    <div id="quinto">#quinto</div>
+
+    <script>
+        // HTMLCollection (não e uma array!!!)
+        const divs = document.getElementsByTagName('div')
+        
+        // Loop #01
+        for(const elemento of divs) {
+            elemento.classList.add('destaque')
+        }
+
+        // Loop #02
+        // const array1 = Array.from(divs) ou
+        Array.from(divs).forEach((el, i) => {
+            if(i % 2 === 1){
+                el.classList.remove('destaque')
+            }
+        })
+
+        // Loop #03
+        const array = [...divs]
+        array.forEach((el, i) => {
+            const ultimo = array.length - 1 === i
+
+            if(ultimo) {
+                el.classList.remove('destaque')
+            }
+        })
+
+    </script>
+</body>
+</html>
