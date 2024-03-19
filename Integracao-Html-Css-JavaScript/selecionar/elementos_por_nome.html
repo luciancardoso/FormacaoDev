@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integração HTML, CSS e JS</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body id="exercicio">
+    <main class="coluna">
+        <h1>Pesquisar no Google</h1>
+        <form name="formGoogle" class="coluna" action="https://www.google.com.br/search">
+            <!-- q=Linux -->
+            <input type="text" name="q" placeholder="Digite o Termo da Pesquisar">
+            <!-- hl=pt-BR -->
+            <select name="hl">
+                <option value="pt-br">Português (Brasil)</option>
+                <option value="en-us">Inglês (EUA)</option>
+            </select>
+            <button>Pesquisar</button>
+        </form>
+    </main>
+
+    <script>
+        // acessando pelo nome
+        const campoConsulta = document.getElementsByName('q')[0]
+        console.log(campoConsulta)
+        campoConsulta.value = 'Apple Watch Ultra'
+
+        // alterando os valores
+        document.formGoogle.hl.value = 'en-us'
+        
+    </script>
+</body>
+</html>
