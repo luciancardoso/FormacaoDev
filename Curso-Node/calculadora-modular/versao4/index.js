@@ -1,5 +1,6 @@
 const basicos = require("./calculosBasicos")
 const complementares = require("./calculosComplementares")
+const {textoDivisao} = require("./calculosDivisao")
 
 let x, y
 x = 20
@@ -11,3 +12,4 @@ console.log(basicos.texto)
 console.log(complementares.pot(x,y))
 console.log(complementares.resto(x,y))
 console.log(complementares.texto)
+console.log(textoDivisao(x,y))
