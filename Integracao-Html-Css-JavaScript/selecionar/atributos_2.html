@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integração HTML, CSS e JS</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body id="exercicio">
+    <main class="coluna">
+        <label for="compras">Compras</label>
+        <ul id="compras" destino="escritorio" data-urgencia="5">
+            <li>Café</li>
+            <li>Água</li>
+            <li>Copo descartável</li>
+        </ul>
+    </main>
+
+    <script>
+        const list = document.querySelector('main ul[destino="escritorio"]')
+        console.log('childNodes', list.childNodes)
+        console.log('destino primeira tentativa', list.destino)
+        console.log('destino segunda tentativa', list.getAttribute('destino'))
+        console.log('hasAttribute', list.hasAttribute('destino'))
+
+        list.setAttribute('destino', 'empresa')
+        list.setAttribute('status', 'aberto')
+        list.removeAttribute('destino')
+
+        console.log(list.dataset.urgencia)
+
+        list.dataset.urgencia = 9
+
+        console.log('data-urgencia', list.getAttribute('data-urgencia'))
+    </script>
+</body>
+</html>

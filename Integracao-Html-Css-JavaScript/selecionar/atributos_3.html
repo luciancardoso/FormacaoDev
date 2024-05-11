@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integração HTML, CSS e JS</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body id="exercicio">
+    <main class="coluna">
+        <label for="compras">Compras</label>
+        <ul id="compras" destino="escritorio" data-urgencia="5">
+            <li>Café</li>
+            <li>Água</li>
+            <li>Copo descartável</li>
+        </ul>
+    </main>
+
+    <script>
+        const list = document.querySelector('#compras')
+
+        // somente leitura
+        console.log(list.attributes)
+        console.log(list.attributes[0])
+        console.log(list.attributes.id)
+        console.log(list.attributes[1])
+        console.log(list.attributes.destino)
+        console.log(list.attributes[2])
+        console.log(list.attributes['data-urgencia'])
+    </script>
+</body>
+</html>
