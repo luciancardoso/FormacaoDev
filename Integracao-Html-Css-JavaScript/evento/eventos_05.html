@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Eventos #05</title>
+
+</head>
+<body id="exercicio">
+    
+    <main class="coluna">
+        <h1>Formulário</h1>
+
+        <form class="coluna" action="https://google.com/search">
+            <input type="text" name="q" id="" placeholder="Digite o temor...">
+            <select name="hl" id="">
+                <option value="pt-br">Português - (Brasil)</option>
+                <option value="en-us">Inglês - (Americano)</option>
+            </select>
+            <button web-submit>Pesquisar</button>
+        </form>
+    </main>
+
+    <script>
+        function submeter(evento) {
+            evento.preventDefault()
+
+            const formulario = evento.target
+            const dadosFormulario = new FormData(formulario)
+            dadosFormulario.append('seguro', true)
+            console.log(dadosFormulario.get('q'))
+            console.log(dadosFormulario.get('hl'))
+            console.log(dadosFormulario.get('seguro'))
+            // console.log('submentendo o formulário...')
+
+            for(dado of dadosFormulario){
+                console.log(dado)
+            }
+            S
+            window.location.href = `https://google.com/search?q=${dadosFormulario.get('hl')}`
+        }
+
+        const botoes = document.querySelectorAll('[web-submit]')
+        botoes.forEach(el => el.onclick = submeter)
+
+        const formulario = document.forms[0]
+        formulario.onsubmit = submeter
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Eventos #03</title>
+</head>
+<body id="exercicio">
+    
+    <div>Elemento</div>
+    
+    <script>
+        const div = document.querySelector('div')
+        div.style.position = 'absolute'
+        // div.style.top = 0
+        
+        div.onmousemove = function(e) {
+            const item = e.target
+            item.style.cursor = 'move'
+
+            if(e.buttons){
+                item.style.top = e.clientY - (item.clientHeight / 2)
+                item.style.left = e.clientX - (item.clientWidth /2)
+                // console.log(e.buttons)
+            }
+            // console.log('movendo mouse....')
+        }
+    </script>
+
+</body>
+</html>
