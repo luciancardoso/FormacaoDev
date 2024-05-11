@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integração HTML, CSS e JS</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body id="exercicio">
+
+    <main>
+        <section>
+            <p>Lista de Aprovados</p>
+            <ul>
+                <li>Ana</li>
+                <li>Rafael</li>
+                <li>Gustavo</li>
+                <li>Pedro</li>
+            </ul>
+            <p>Lista de Reprovados..</p>
+            <ul>
+                <li>Alex</li>
+                <li>Carlos</li>
+                <li>Davi</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        const primeiros = document.querySelectorAll('main > section li:nth-child(1)')
+        // console.log(itens)
+        primeiros.forEach(no => no.textContent = `>>>> ${no.textContent} <<<<`)
+
+        const itens = document.querySelectorAll('main > section li')
+        const ultimoItem = itens[itens.length - 1]
+        const listaDeReprovados = ultimoItem.parentNode
+        console.log(ultimoItem.parentNode)
+    </script>
+</body>
+</html>
