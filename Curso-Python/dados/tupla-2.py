@@ -1,0 +1,11 @@
+numeros = (1, 2, 3, 4, 5, 2, 2, 2)
+
+print(numeros.count(2))
+print(numeros.index(5))
+print(numeros.index(3))
+print(len(numeros))
+print(min(numeros))
+print(max(numeros))
+print(sorted(numeros))
+print(sum(numeros))
+print(all(numeros))
