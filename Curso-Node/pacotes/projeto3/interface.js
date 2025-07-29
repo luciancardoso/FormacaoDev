@@ -15,3 +15,17 @@ export async function menu(itens){
 export function finalizar(){
     process.exit();
 }
+
+export async function le(enunciado){
+    term(`${enunciado}\n\n`);
+    const foiLido = await term.inputField().promise
+    return foiLido;
+}
+
+export function textoVerde(texto){
+    term.green(`\n\n${texto}`);
+}
+
+export function textoAzul(texto){
+    term.blue(`\n\n${texto}`);
+}
